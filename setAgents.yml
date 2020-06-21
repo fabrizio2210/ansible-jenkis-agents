@@ -1,0 +1,12 @@
+---
+- hosts: ssh-jenkins-agents
+  tasks:
+
+  - name: role basicSetup
+    include_role:
+      name: basicSetup
+
+  - name: role ssh jenkins agent
+    include_role:
+      name: ssh_jenkins_agent
+
